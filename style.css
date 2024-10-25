@@ -1,0 +1,442 @@
+/* CSS Reset: http://meyerweb.com/eric/tools/css/reset */
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+/*body {*/
+/*  line-height: 1;*/
+/*}*/
+html, body {
+  height: 100%;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+}
+ol, ul {
+  list-style: none;
+  padding: 0;
+}
+blockquote, q {
+  quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/**************************************************/
+
+#body{
+  font-family: 'Asap', roboto, sans-serif;
+  font-size: 1em;
+  line-height: 1.5em;
+  color: #150c21;
+}
+
+/*#main {*/
+/*  width: 54em;*/
+/*  margin: 0px auto;*/
+/*  position: relative;*/
+/*  min-height: 100vh;*/
+/*}*/
+
+#main {
+  width: 54em;
+  margin: 0 auto;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1; /* Allows main content to grow and fill space between header and footer */
+}
+
+
+a {
+  text-decoration: none;
+  color: rgb(20, 110, 190);
+}
+
+a:hover {
+  text-decoration: none;
+  border-bottom: 1px solid rgb(20, 110, 190);
+}
+
+i {
+  font-style: italic;
+}
+
+b {
+  font-weight: 700;
+}
+
+h1 {
+  font-size: 2.4em;
+  line-height: 3em;
+  font-weight: 500;
+}
+
+/*ul {*/
+/*  list-style: none;*/
+/*  padding: 0;*/
+/*}*/
+
+li {
+  display: flex;
+  justify-content: space-between; /* 让内容两端对齐 */
+  margin-bottom: 1.5em;
+}
+
+em {
+  font-style: italic;
+  color: #666;
+}
+/**************************************************/
+/* Profile image and description. */
+
+#intro {
+  padding-top: 6em;
+  display: flex;
+}
+
+#intro-text {
+  width: 40em;
+  float: left;
+}
+
+#intro-image {
+  margin: 6em 0 0 2em;
+  width: 12em;
+  height: 14em;
+  float: left;
+  overflow: hidden;
+  border-radius: 1em;
+}
+
+#intro-image img {
+  width: 12em;
+}
+
+/**************************************************/
+/* Section buttons. */
+
+#education, #services, #internships {
+  margin-bottom: 2em; /* 每个部分之间留出一些空白 */
+}
+
+.education-date {
+  width: 20%; /* Width for date */
+  text-align: left; /* align left */
+  font-size: 1.1em;
+  font-style: italic;
+  color: #666;
+}
+
+.education-school {
+  width: 25%;
+  text-align: left;
+  margin-left: 20px;
+  font-weight: bold;
+  font-size: 1.1em;
+  color: #333;
+}
+
+.education-degree {
+  /*display: block;*/
+  width: 55%;
+  text-align: left;
+  margin-left: 20px;
+  font-size: 1.1em;
+  color: #444;
+}
+
+.service-date {
+  /*width: 18%; !* Width for date *!*/
+  text-align: left; /* align left */
+  font-size: 1.1em;
+  font-style: italic;
+  color: #666;
+}
+
+.service-course {
+  /*width: 63%;*/
+  text-align: left;
+  margin-left: 20px;
+  font-weight: bold;
+  font-size: 1.1em;
+  color: #333;
+}
+
+.service-position {
+  /*display: block;*/
+  /*width: 19%;*/
+  text-align: left;
+  margin-left: 20px;
+  font-size: 1.1em;
+  color: #444;
+}
+
+.section-title {
+  border-bottom: 1px solid #000;
+  padding-bottom: 10px;
+  margin-bottom: 20px;
+}
+
+.image-gallery {
+  margin-bottom: 10px;
+  display: flex;
+  gap: 10px;
+}
+
+.gallery-image {
+  width: 400px;
+  height: auto;
+  border-radius: 8px;
+  object-fit: cover;
+}
+
+#menu {
+  display: flex;
+}
+
+.menu-item {
+  float: left;
+  margin-right: 2em;
+}
+
+h2 {
+  font-size: 1.6em;
+  /*line-height: 2.4em;*/
+  /*margin-top: 0.5em;*/
+  /*color: #a0a8b0;*/
+  margin-bottom: 0.5em;
+}
+
+.selected h2 {
+  color: #150c21;
+}
+
+.button {
+  display: inline-block;
+  cursor: pointer;
+  border: none;
+  background: none;
+  color: #a0a8b0;
+  font-size: 1.6em;
+  line-height: 2.4em;
+  margin-top: 0.5em;
+  margin-right: 1em;
+  float: left;
+  padding: 0;
+}
+
+.button:hover {
+  color: #150c21;
+}
+
+.button:active,
+.button.is-checked {
+  color: #150c21;
+}
+
+.button-group:after {
+  content: '';
+  display: block;
+  clear: both;
+}
+
+/**************************************************/
+/* Isotope grid list of items. */
+
+/*.grid {*/
+/*  !*flex: 1; !* 主内容区域占据页面的剩余空间 *!*!*/
+/*  padding-bottom: 6em;*/
+/*}*/
+.grid {
+  flex-grow: 1; /* Allows the content area to fill available space */
+  padding-bottom: 6em; /* Padding to ensure space for footer */
+}
+
+/* clear fix */
+.grid:after {
+  content: '';
+  display: block;
+  clear: both;
+}
+
+.description {
+  margin-bottom: 1em;
+}
+
+.list-item {
+  width: 100%;
+  line-height: 1em;
+  margin-top: 1em;
+}
+
+.list-item p.date {
+  display: inline-block;
+  width: 3em;
+  color: #a0a8b0;
+}
+
+.list-item.publication {
+  display: flex; /* 使用 flexbox 布局 */
+  align-items: flex-start; /* 图片和文字顶部对齐 */
+  gap: 40px; /* 图片和文字之间留出一些空隙 */
+}
+/**************************************************/
+/* Gallery of 3 preview videos. */
+
+.previews {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 10px;
+  grid-auto-rows: minmax(100px, auto);
+  height: 12.5em;
+}
+
+.previews video {
+  border-radius: 5px;
+}
+
+.previews a:hover {
+  border: none;
+}
+
+.preview1 {
+  grid-column: 1;
+  width: 100%;
+}
+.preview2 {
+  grid-column: 2;
+  width: 100%;
+}
+.preview3 {
+  grid-column: 3;
+  width: 100%;
+}
+
+/**************************************************/
+/* Buttons for showing more or less highlights. */
+
+.toggle-button {
+  margin-top: 2em;
+}
+
+.toggle-button a {
+  color: #a0a8b0;
+}
+
+.toggle-button a:hover {
+  color: rgb(20, 110, 190);
+}
+
+/**************************************************/
+/* Publication details (thumbnail media, title, and description). */
+
+.thumbnail {
+/*  width: 21%;*/
+  width: 18%;
+  float: left;
+  margin-right: 2%;
+}
+
+.thumbnail:hover {
+  border-bottom: none;
+}
+
+.thumbnail img {
+  /*margin-top: 0.4em;*/
+  /*border-radius: 5px;*/
+  /*width: 100%;*/
+  /*height: 100%;*/
+  width: auto; /* 宽度自适应 */
+  max-width: 100%; /* 图片不会超过父元素 */
+  height: auto; /* 保持比例 */
+  border-radius: 5px; /* 圆角 */
+}
+
+.thumbnail video {
+  margin-top: 0.4em;
+  border-radius: 5px;
+  width: 100%;
+  height: 100%;
+}
+
+h3 {
+  font-size: 1em;
+  line-height: 1.5em;
+}
+
+h3 a {
+  color: #150c21;
+}
+
+h3 a:hover {
+  color: rgb(20, 110, 190);
+}
+
+.publication {
+  margin-bottom: 0.5em;
+}
+
+.publication p {
+  font-size: 1em;
+  line-height: 1.5em;
+  color: #a0a8b0;
+}
+
+.project-description {
+  flex: 1;
+  /*width: 80%;*/
+  float: left;
+}
+
+/**************************************************/
+/* Subtle footer at the bottom of the page. */
+
+/*#footer {*/
+/*  color: #a0a8b0;*/
+/*  position: absolute;*/
+/*  bottom: 0;*/
+/*  line-height: 2.5em;*/
+/*}*/
+
+#footer {
+  color: #a0a8b0;
+  text-align: center;
+  padding: 20px 0;
+  background-color: #f8f9fa; /* Background color to make it visible */
+  width: 100%; /* Full width of the viewport */
+}
+
+/* Spacer element to push the footer down in case of dynamic content */
+.spacer {
+  flex-grow: 1;
+}
