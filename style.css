@@ -238,11 +238,11 @@ h2 {
   margin-bottom: 0.5em;
 }
 
-.tech-stack {
-  font-size: 0.7em;  /* 调整字体大小，使其较小 */
-  color: #888;       /* 选择一个较浅的颜色，以便与主标题区分 */
-  margin-left: 10px; /* 在主标题和技术栈之间增加一些间距 */
-  font-weight: normal; /* 使用普通字体，而不是标题的加粗字体 */
+h2 .tech-stack {
+  font-size: 0.7em;
+  color: #888;
+  margin-left: 10px;
+  font-weight: normal;
 }
 
 .selected h2 {
