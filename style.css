@@ -231,11 +231,18 @@ em {
 }
 
 h2 {
-  font-size: 1.6em;
+  font-size: 1.3em;
   /*line-height: 2.4em;*/
   /*margin-top: 0.5em;*/
   /*color: #a0a8b0;*/
   margin-bottom: 0.5em;
+}
+
+.tech-stack {
+  font-size: 0.7em;  /* 调整字体大小，使其较小 */
+  color: #888;       /* 选择一个较浅的颜色，以便与主标题区分 */
+  margin-left: 10px; /* 在主标题和技术栈之间增加一些间距 */
+  font-weight: normal; /* 使用普通字体，而不是标题的加粗字体 */
 }
 
 .selected h2 {
