@@ -316,7 +316,17 @@ h2 .tech-stack {
 .list-item.publication {
   display: flex; /* 使用 flexbox 布局 */
   align-items: flex-start; /* 图片和文字顶部对齐 */
-  gap: 40px; /* 图片和文字之间留出一些空隙 */
+  /*align-items: stretch;  !* 保持每个元素的高度一致 *!*/
+  gap: 30px; /* 图片和文字之间留出一些空隙 */
+  margin-bottom: 1em;
+}
+
+/*Set parameters for the image in list-item publication*/
+.list-item.publication img {
+  width: 25%;  /* 设置宽度为100%，使其充满父容器 */
+  height: 160px;
+  object-fit: cover;  /* 保持比例，覆盖整个容器 */
+  border-radius: 8px; /* 圆角以保持样式一致 */
 }
 /**************************************************/
 /* Gallery of 3 preview videos. */
@@ -422,7 +432,7 @@ h3 a:hover {
 
 .project-description {
   flex: 1;
-  /*width: 80%;*/
+  /*width: 75%;*/
   float: left;
 }
 
@@ -438,9 +448,9 @@ h3 a:hover {
 
 #footer {
   color: #a0a8b0;
-  text-align: center;
+  text-align: left;
   padding: 20px 0;
-  background-color: #f8f9fa; /* Background color to make it visible */
+  /*background-color: #f8f9fa; !* Background color to make it visible *!*/
   width: 100%; /* Full width of the viewport */
 }
 
